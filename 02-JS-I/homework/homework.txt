@@ -1,0 +1,24 @@
+
+
+    //  ---Variables--- //
+    Las variables son una forma de almacenar informacion / datos  de algo  que vamos a utilizar en el futuro.
+
+    // ---Strings--- //
+    Los strings son cadenas/ bloques de texto (un string puede ser tambien un numero pero siempre debe estar encerrado en comillas) que estan encerrados en comillas ya sean simples o dobles.
+
+    // --- Funciones --- //
+    Las funciones son  bloques/pedazos de codigo que pueden ser reutilizados y se utilizan para realizar tareas o devolver un resultado. Una función puede requerir ser llamada pasándole ciert información o no requerir información, esta informacion
+    se la conoce como los parametros /argumentos ,
+    Una funcion se escribe de la siguiente manera function name() {};
+    dentro de los parentesis se colocan esas Declaraciones que luego van a ser utilizadas
+
+
+
+    // --- If --- //
+
+    //Los if son sentencias que se utilizan cuando necesitamos saber si (if) una condición es verdadera, si no lo es otra sentencia será ejecutada.
+
+
+    // --- Valores Booleanos --- //
+    los valores booleanos provienen del codigo binario y tienen dos opciones activar o desactivar, 0 o 1, verdadero o falso. En js los tulizamos para saber 
+    si un valor es verdadero o falso.
