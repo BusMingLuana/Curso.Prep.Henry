@@ -1,0 +1,12 @@
+
+// --- For ---//
+For es un ciclo que sirve para hacer tareas repetitivas ,el ciclo se corta cuando una condición especifica sea falsa.
+
+// --- Operadores Lógicos ---//
+Los operadores lógicos comparan valores booleanos y devuelven respuestas booleanas.
+
+&& : el operador AND evalua dos expresiones ,puede devolver "true" si es que ambas expresiones son verdaderas o "False" si uno o ambos no son verdaderos
+|| : el operador OR evalua ambas expresiones ,si una o ambas expresiones son verdaderas devolverá "True" ,de lo contrario, si ambas son falsas devolverá "False"
+!:El operador NOT acepta un solo argumento y realiza lo siguiente:
+    Convierte el operando al tipo booleano: true/false.
+    Retorna el valor contrario.
