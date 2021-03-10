@@ -124,12 +124,14 @@ function esEntero(numero) {
   // De lo contrario, devuelve "false"
   // Pista: Puedes resolver esto usando `Math.floor`
   // Tu código:
-  if (numero % 1 === 0) {
-    return true
+  // if (numero % 1 === 0) {
+  //   return true
 
-  }else{
-    return false
-  }
+  // }else{
+  //   return false
+  // }
+
+  return Math.floor(numero) === numero; //redondeamos el numero para abajo
 }
 
 function fizzBuzz(numero) {
@@ -137,19 +139,32 @@ function fizzBuzz(numero) {
   // Si "numero" es divisible entre 5, devuelve "buzz"
   // Si "numero" es divisible entre 3 y 5 (ambos), devuelve "fizzbuzz"
   // De lo contrario, devuelve el numero
-  if (numero % 15 === 0 ) {
-    return "fizzbuzz"
-  }
-  if (numero % 3 === 0) {
-    return "fizz"
+  // if (numero % 15 === 0 ) {
+  //   return "fizzbuzz"
+  // }
+  // if (numero % 3 === 0) {
+  //   return "fizz"
 
-  }if (numero % 5 === 0) {
+  // }if (numero % 5 === 0) {
+  //   return "buzz"
+
+  // }else{
+  //   return numero;
+  // }
+
+  if (numero % 3 === 0 && numero % 5 === 0) {
+    return "fizzbuzz";
+
+  } else if (numero % 3 === 0 ){
+    return "fizz";
+  }
+  else  if (numero % 5 === 0){
     return "buzz"
-
-  }else{
-    return numero;
-  }
+  } else{
+  return numero;
 }
+}
+
 
 function operadoresLogicos(num1, num2, num3) {
   //La función recibe tres números distintos. 
@@ -159,21 +174,21 @@ function operadoresLogicos(num1, num2, num3) {
   //0 no es ni positivo ni negativo. Si alguno de los argumentos es 0, retornar "Error".
   //Si no se cumplen ninguna de las condiciones anteriores, retornar false. 
   if (num1 < 0 || num2 < 0 || num3 < 0) {
-    return "Hay negativos"
- }
- else if (num1 === 0 || num2 === 0 || num3 === 0) {
-  return "Error"
+    return "Hay negativos";
 }
-  if (num1 > num2 && num1 > num3 && num1 > 0) {
-      return "Número 1 es mayor y positivo"
+ else if (num1 === 0 || num2 === 0 || num3 === 0) {
+  return "Error";
+}
+  else if (num1 > num2 && num1 > num3) {
+      return "Número 1 es mayor y positivo";
   }
-  if (num3 > num1 && num3 > num2) {
+  else if (num3 > num2 && num3 > num1) {
     num3++
-    return num3
+    return num3;
   }
 
   else{
-    return false
+    return false;
   }
 
 }
@@ -200,11 +215,11 @@ function esVerdadero(valor){
   //si su valor es true y “Soy falso” si su valor es false.
   //Escribe tu código aquí
 
-  if (valor === true) {
+  if (valor) { // valor === true puedo hacer esto tambien
     return "Soy verdadero"
   }
-  else if (valor === false) {
-     return "Soy falso"
+  else{   // if (valor === false) 
+    return "Soy falso"
   }
 
 }
