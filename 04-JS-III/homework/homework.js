@@ -193,7 +193,15 @@ return "Es dia Laboral"
 function empiezaConNueve(n) {
   //Desarrolle una función que recibe como parámetro un número entero n. Debe retornar true si el entero 
   //inicia con 9 y false en otro caso.
-  //Escribe tu código aquí
+  //Escribe tu código aquí:
+  var numero = n.toString();
+  if (numero.char(At(0) === '9')){ 
+    //El método charAt() de String devuelve en un nuevo String el carácter ,que se solicite,de una cadena.
+    //este charAt(0) se fija si el numero del array empieza con nueve
+     return true;
+  }else{
+    return false;
+  }
   
 }
 
