@@ -10,10 +10,10 @@ function crearGato(nombre, edad) {
       nombre: nombre,
       edad: edad,
       meow : function () {
-         return "Meow!";
+          return "Meow!";
       }
   };
-   return Nuevogato;
+    return Nuevogato;
 }
 
 
@@ -155,9 +155,9 @@ var usuario = {
   amigos: ['Luana', 'Alexis']
 };
 
- usuario.amigos.push(nuevoAmigo);
+  usuario.amigos.push(nuevoAmigo);
 
- return usuario;
+  return usuario;
 }
 
 function pasarUsuarioAPremium(usuarios) {
@@ -167,7 +167,7 @@ function pasarUsuarioAPremium(usuarios) {
   // Devuelve el array de usuarios
   // Tu código:
     for (let i = 0; i < usuarios.length; i++) {
-       usuarios[i].esPremium = true;  
+        usuarios[i].esPremium = true;  
     };
 
     return usuarios;
@@ -190,7 +190,7 @@ function sumarLikesDeUsuario(usuario) {
   var suma = 0;
 
   for (var i = 0; i < usuario.posts.length; i++) {
-     suma = suma + usuario.posts[i].likes;
+      suma = suma + usuario.posts[i].likes;
   };
 
   return suma;
